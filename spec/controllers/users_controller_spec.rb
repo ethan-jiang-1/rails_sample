@@ -40,12 +40,10 @@ describe UsersController do
       response.should have_selector("h1", :content => @user.name)
     end
 
-    #it "should have a profile image" do
-    #  get :show, :id => @user
-    #  response.should have_selector("h1>img", :alt => "gravatar")
-    #end    
-    
-    
-  end
-
+    it "should have a profile image" do
+      get :show, :id => @user
+      response.should have_selector("h1>img", :class => "gravatar")
+    end    
+   end
 end
+

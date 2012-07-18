@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_filter :authenticate, :only => [:edit, :update]
+  before_filter :authenticate, :except => [:show, :new, :create]
   before_filter :correct_user, :only => [:edit, :update]
 
   def show
@@ -9,12 +9,12 @@ class UsersController < ApplicationController
 
   def index
     @title = "All users"
-    @users = User.all
+    @users = User.paginate(:page => params[:page])
   end  
 
   def new
     @user = User.new
-    @title = @user.name
+    @title = "Sign up"
   end
 
   def create

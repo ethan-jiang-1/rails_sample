@@ -10,9 +10,13 @@ gem 'sqlite3-ruby',  :group => :development
 
 gem 'gravatar_image_tag'
 
+gem "will_paginate"
+
 #new code required by sample - Yizhen
 group :development do
   gem 'rspec-rails'
+  #gem 'annotate-models'
+  gem 'faker'
 end
 
 group :test do

@@ -334,11 +334,13 @@ describe UsersController do
   describe "follow pages" do
     describe "when not signed in" do
       it "should protect 'following'" do
+        #debugger
         get :following, :id => 1
         response.should redirect_to(signin_path)
       end
       
       it "should protect 'followers'" do
+        #debugger
         get :followers, :id => 1
         response.should redirect_to(signin_path)
       end

@@ -17,4 +17,5 @@ group :test do
   #gem 'debugger'
   gem 'webrat'
   gem 'factory_girl_rails', "=1.7.0"
+  gem "spork"
 end

@@ -1,20 +1,20 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.9'
-gem 'gravatar_image_tag', '1.1.3'
-gem "will_paginate", '3.0.3' 
-gem 'sqlite3', '1.3.3'
+gem 'rails'
+gem 'gravatar_image_tag'
+gem "will_paginate"
+gem 'sqlite3'
 
 group :development do
-  gem 'sqlite3-ruby', '1.3.3'
-  gem 'rspec-rails', '2.11.0'
+  gem 'sqlite3-ruby'
+  gem 'rspec-rails'
   #gem 'annotate-models'
-  gem 'faker', '1.0.1'
+  gem 'faker'
 end
 
 group :test do
-  gem 'rspec' , '2.11.0'
-  gem 'debugger'
-  gem 'webrat',  '0.7.3' 
-  gem 'factory_girl_rails', '3.5.0'
+  gem 'rspec-rails' 
+  #gem 'debugger'
+  gem 'webrat'
+  gem 'factory_girl_rails', "=1.7.0"
 end

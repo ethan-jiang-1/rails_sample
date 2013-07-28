@@ -6,6 +6,15 @@ gem 'gravatar_image_tag'
 gem "will_paginate"
 gem 'sqlite3'
 
+gem 'jquery-rails'
+gem 'twitter-bootstrap-rails'
+
+group :assets do
+  gem 'sass-rails',   "~> 3.2.3"
+  gem 'coffee-rails', "~> 3.2.1"
+  gem 'uglifier'
+end
+
 group :development do
   gem 'sqlite3-ruby'
   gem 'rspec-rails'

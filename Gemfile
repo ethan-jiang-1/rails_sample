@@ -1,6 +1,7 @@
-source 'http://rubygems.org'
+#source 'http://rubygems.org'
+source 'http://ruby.taobao.org'
 
-gem 'rails'
+gem 'rails', "3.2.13"
 gem 'gravatar_image_tag'
 gem "will_paginate"
 gem 'sqlite3'

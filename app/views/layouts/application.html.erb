@@ -19,12 +19,13 @@
 		
 		<%= render 'layouts/footer' %>
 		
-		
+		<!-- remove debug info
 		<nav class="round">
 			<p class="debug"><%= debug(params) if Rails.env.development? %></p>
 			<p class="debug"><%= "host:#{ENV['VCAP_APP_HOST']}"%>
 			<p class="debug"><%= "port:#{ENV['VCAP_APP_PORT']}"%>
 		</nav>
+	     -->
 	</div>
 </body>
 </html>

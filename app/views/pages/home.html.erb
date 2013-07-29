@@ -1,16 +1,22 @@
 <% if signed_in? %>
-<table class="front" summary="For signed-in users">
-<tr>
-<td class="main">
-<h1 class="micropost">What's up?</h1>
-<%= render 'shared/micropost_form' %>
-<%= render 'shared/feed' %>
-</td>
-<td class="sidebar round">
-<%= render 'shared/user_info' %>
-<%= render 'shared/stats' %>
-</td>
-</tr>
+<table class="table" summary="For signed-in users" >
+	<tr>
+		<td class="main" rows="9">
+			<h1 class="micropost">What's up?</h1>
+			<%= render 'shared/micropost_form' %>
+		</td>
+		<td class="sidebar round" rows="3">
+			<%= render 'shared/user_info' %>
+			<%= render 'shared/stats' %>
+		</td>
+	</tr>
+</table>
+<table class="table table-striped" summary="For signed-in users" rows="10">
+	<tr>
+		<td class="main" rows="10">
+			<%= render 'shared/feed' %>
+		</td>
+	</tr>
 </table>
 <% else %>
 <h1>Sample App</h1>

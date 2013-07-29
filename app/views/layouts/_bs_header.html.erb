@@ -1,8 +1,14 @@
-<header>
-	<!--<%= image_tag("logo.png", :alt => "Sample App", :class => "round") %> -->
-	<%= link_to logo, root_path %>
-	<nav class="round">
-		<ul>
+    <div class="navbar navbar-fluid-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">Rails Sample</a>
+          <div class="container-fluid nav-collapse pull-right">
+            <ul class="nav">
 			<li><%= link_to "Home", home_path %></li>
 			<% if signed_in? %>
 			<li><%= link_to "Users", users_path %></li>
@@ -11,6 +17,8 @@
 			<% end %>			
 			<li><%= link_to "Help", help_path %></li>
 			<li><%= link_to "Sign in", signin_path %></li>
-		</ul>
-	</nav>
-</header>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
